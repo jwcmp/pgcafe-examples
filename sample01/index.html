@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <title>Excamples 01 - JWCMP Programmer's cofe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/uikit.min.css" />
-  <script src="js/uikit.min.js"></script>
-  <script src="js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="/css/uikit.min.css" />
+  <script src="/js/uikit.min.js"></script>
+  <script src="/js/uikit-icons.min.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -20,137 +20,55 @@
 </head>
 <body>
     <div class="uk-container uk-margin-top">
-        <h1 id="main-title"></h1>
-        <div uk-grid>
-            <div class="uk-width-1-3" uk-toggle="target: .card01">
-                <div class="uk-cover-container uk-height-small card01" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card01">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+        <h1 id="main-title">プログラミング基礎</h1>
+        <div class="uk-grid-small" uk-grid>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-1">
+                <div id="ans"></div>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card02">
-                <div class="uk-cover-container uk-height-small card02" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="http://www9.nhk.or.jp/das/movie/D0002040/D0002040411_00000_V_000.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card02">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card03">
-                <div class="uk-cover-container uk-height-small card03" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="http://www9.nhk.or.jp/das/movie/D0002040/D0002040246_00000_V_000.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card03">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card04">
-                <div class="uk-cover-container uk-height-small card04" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="http://www9.nhk.or.jp/das/movie/D0002040/D0002040237_00000_V_000.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card04">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card05">
-                <div class="uk-cover-container uk-height-small card05" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="http://www9.nhk.or.jp/das/movie/D0002040/D0002040414_00000_V_000.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card05">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card06">
-                <div class="uk-cover-container uk-height-small card06" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card06">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card07">
-                <div class="uk-cover-container uk-height-small card07" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card07">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card08">
-                <div class="uk-cover-container uk-height-small card08" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card08">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card09">
-                <div class="uk-cover-container uk-height-small card09" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card09">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card10">
-                <div class="uk-cover-container uk-height-small card10" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card10">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card11">
-                <div class="uk-cover-container uk-height-small card11" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card11">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
-            <div class="uk-width-1-3" uk-toggle="target: .card12">
-                <div class="uk-cover-container uk-height-small card12" hidden>
-                    <video autoplay loop muted playsinline uk-cover>
-                        <source class="video-source" src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="uk-cover-container uk-height-small card12">
-                    <img class="card-back-side" src="img/card-back-side.jpg">
-                </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
+            </div>
+            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <h3 class="uk-card-title">1</h3>
             </div>
         </div>
     </div>
 <script type="text/javascript">
     window.onload = function(){
-        var videos1 = ["bat", "kame","usagi","tar","domo","fish"];
-        var allVideos = videos1.concat(videos1).sort(function() {return Math.random() - .5;});
-        $('.video-source').map(function(i, el){$(el).attr("src", "img/"+allVideos[i]+".mp4");});
-        $('.video-source').parent().map(function(i, e){e.load();});
-        $('#main-title').html("Hello, world!");
+        // ここにプログラムを書きます
+        $('h3').map(function(i, el){$(el).html(Math.floor(Math.random() * 101))});
+
+        // 
     };
 </script>
 </body>
