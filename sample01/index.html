@@ -25,51 +25,59 @@
             <div class="uk-card uk-card-default uk-card-body uk-width-1-1">
                 <div id="ans"></div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
-            <div class="uk-card uk-card-default uk-card-body uk-width-1-4@m">
-                <h3 class="uk-card-title">1</h3>
+            <div class="num uk-card uk-card-default uk-card-body uk-width-1-4@m">
+                <div class="num uk-card-title">1</div>
             </div>
         </div>
     </div>
 <script type="text/javascript">
     window.onload = function(){
         // ここにプログラムを書きます
-        $('h3').map(function(i, el){$(el).html(Math.floor(Math.random() * 101))});
-
-        // 
+        // これは、0~100までのランダムな数字を生成して、カードに表示する処理です。
+        $('.num').map(function(i, el){$(el).html(Math.floor(Math.random() * 101))});
+        // $('div').click(function(){$('#ans').html($(e.target).html());});
+        $('.num').on('click', clickCard);
     };
+
+    var clickCard = function(e) {
+        $('#ans').html($(e.target).html());
+        return true;
+    };
+
+
 </script>
 </body>
 </html>
