@@ -16,6 +16,9 @@
         width: 100%;
         height: 100%;
     }
+    .active {
+        background-color: pink;
+    }
   </style>
 </head>
 <body>
@@ -65,15 +68,22 @@
     </div>
 <script type="text/javascript">
     window.onload = function(){
-        // ここにプログラムを書きます
         // これは、0~100までのランダムな数字を生成して、カードに表示する処理です。
         $('.num').map(function(i, el){$(el).html(Math.floor(Math.random() * 101))});
-        // $('div').click(function(){$('#ans').html($(e.target).html());});
+
+        // ここにプログラムを書きます
         $('.num').on('click', clickCard);
     };
 
     var clickCard = function(e) {
         $('#ans').html($(e.target).html());
+        if($(e.target).attr("data-active")=="1") {
+            $(e.target).removeClass("active");
+            $(e.target).attr("data-active", "");
+        } else {
+            $(e.target).addClass("active");
+            $(e.target).attr("data-active", "1");
+        }
         return true;
     };
 
